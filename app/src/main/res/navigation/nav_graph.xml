@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:label="fragment_start"
+        android:name="com.appsophos2.model.LoginFragment"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuFragment"
+        android:label="fragment_flavor"
+        android:name="com.appsophos2.model.MenuFragment"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menuFragment_to_send_docFragment"
+            app:destination="@id/send_docFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_view_docFragment"
+            app:destination="@id/view_docFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_officesFragment"
+            app:destination="@id/officesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/send_docFragment"
+        android:label="fragment_pickup"
+        android:name="com.appsophos2.model.SendDocumentFragment"
+        tools:layout="@layout/fragment_send_document" >
+        <action
+            android:id="@+id/action_send_docFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/view_docFragment"
+        android:label="fragment_summary"
+        android:name="com.appsophos2.model.ViewDocumentFragment"
+        tools:layout="@layout/fragment_view_document" >
+        <action
+            android:id="@+id/action_view_docFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/officesFragment"
+        android:label="fragment_summary"
+        android:name="com.appsophos2.model.OfficesFragment"
+        tools:layout="@layout/fragment_offices" >
+        <action
+            android:id="@+id/action_officesFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+
+</navigation>

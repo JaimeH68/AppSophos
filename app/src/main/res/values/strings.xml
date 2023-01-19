@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">AppSophos2</string>
+
+    <string name="meh">Ingresa tus datos para acceder</string>
+    <string name="button">Ingresar</string>
+    <string name="login__password_hint">Contraseña</string>
+    <string name="login__email_hint">Email</string>
+    <string name="sendD__name_hint">Nombres</string>
+    <string name="sendD__lastname_hint">Apellidos</string>
+    <string name="sendD__document_hint">Numero de documento</string>
+    <string name="sendD__email_hint">Email</string>
+    <string name="sendD__city_hint">Ciudad</string>
+    <string name="sendD__archive_hint">Tipo de Adjunto</string>
+    <string name="sendD__document_type_hint">Tipo de documento</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="form_required_field">Campo requerido</string>
+</resources>

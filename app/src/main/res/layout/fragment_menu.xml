@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/btn_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="340dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/menu"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/text_getname"
+        android:layout_width="120dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="220dp"
+        android:gravity="center"
+        android:text="name"
+        android:textColor="#7800FD"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout_image"
+        app:layout_constraintEnd_toStartOf="@+id/btn_menu"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.333" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_send_document"
+        android:layout_width="370dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/border_send"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout_see_document"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout_image">
+
+        <ImageView
+            android:id="@+id/image_description"
+            android:layout_width="31dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="3dp"
+            app:srcCompat="@drawable/description" />
+
+        <TextView
+            android:id="@+id/text_send"
+            android:layout_width="156dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@id/image_description"
+            android:fontFamily="@font/montserrat_semibold"
+            android:gravity="center"
+            android:text="Enviar documentos"
+            android:textColor="#FE1191 " />
+
+        <RelativeLayout
+            android:id="@+id/rl_send"
+            android:layout_width="177dp"
+            android:layout_height="44dp"
+            android:layout_below="@id/text_send"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_toRightOf="@id/text_send"
+            android:background="@drawable/border_send"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/text_send_doc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_toLeftOf="@id/text_send_doc"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Ingresar"
+                android:textColor="#FE1191 " />
+
+            <ImageView
+                android:id="@+id/image_arrowp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="7dp"
+                android:layout_toRightOf="@id/text_send_doc"
+                app:srcCompat="@drawable/arrow_pink" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_offices"
+        android:layout_width="370dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="61dp"
+        android:background="@drawable/border_office"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout_see_document">
+
+        <ImageView
+            android:id="@+id/image_offices"
+            android:layout_width="31dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="3dp"
+            app:srcCompat="@drawable/location_on" />
+
+        <TextView
+            android:id="@+id/text_off"
+            android:layout_width="155dp"
+            android:layout_height="37dp"
+            android:layout_toRightOf="@id/image_offices"
+            android:fontFamily="@font/montserrat_semibold"
+            android:gravity="center"
+            android:text="Oficinas"
+            android:textColor="#05667C" />
+
+        <RelativeLayout
+            android:id="@+id/rl_offi"
+            android:layout_width="177dp"
+            android:layout_height="44dp"
+            android:layout_below="@id/text_off"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_toRightOf="@id/text_off"
+            android:background="@drawable/border_office"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/text_offices"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_toLeftOf="@id/text_offices"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Ingresar"
+                android:textColor="#05667C" />
+
+            <ImageView
+                android:id="@+id/image_arrowa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="7dp"
+                android:layout_toRightOf="@id/text_offices"
+                app:srcCompat="@drawable/arrow_aqua" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_image"
+        android:layout_width="410dp"
+        android:layout_height="280dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout_send_document"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_menu">
+
+        <ImageView
+            android:id="@+id/image_corporate"
+            android:layout_width="410dp"
+            android:layout_height="260dp"
+            app:srcCompat="@drawable/corporate_template"
+            tools:layout_editor_absoluteY="50dp" />
+
+        <TextView
+            android:id="@+id/text_welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="39dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="70dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="Bienvenido"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/text_message"
+            android:layout_width="194dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="125dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="50dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="Estas son las opciones que tenemos para ti"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_see_document"
+        android:layout_width="370dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="21dp"
+        android:background="@drawable/border_see"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout_offices"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout_send_document">
+
+        <ImageView
+            android:id="@+id/image_plagiarism"
+            android:layout_width="31dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="3dp"
+            app:srcCompat="@drawable/plagiarism" />
+
+        <TextView
+            android:id="@+id/text_see"
+            android:layout_width="155dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@id/image_plagiarism"
+            android:fontFamily="@font/montserrat_semibold"
+            android:gravity="center"
+            android:text="Ver documentos"
+            android:textColor="#4500FF " />
+
+        <RelativeLayout
+            android:id="@+id/rl_see"
+            android:layout_width="177dp"
+            android:layout_height="44dp"
+            android:layout_below="@id/text_see"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_toRightOf="@id/text_see"
+            android:background="@drawable/border_see"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/text_see_doc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_toLeftOf="@id/text_see_doc"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Ingresar"
+                android:textColor="#4500FF" />
+
+            <ImageView
+                android:id="@+id/image_arrowv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="7dp"
+                android:layout_toRightOf="@id/text_see_doc"
+                app:srcCompat="@drawable/arrow_violet" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
